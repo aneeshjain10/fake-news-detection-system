@@ -39,7 +39,7 @@ export default function TextAnalysis({ backendOnline, onAnalyzed }) {
 
       if (mode === 'url') {
         if (!url.trim()) { setError('Please enter a URL.'); setLoading(false); return }
-        endpoint = 'http://localhost:5000/api/analyze/url'
+        endpoint = 'https://fake-news-detection-system-j6b1.onrender.com/api/analyze/url'
         body = { url: url.trim() }
       } else {
         if (!text.trim() || text.trim().length < 10) {
@@ -47,7 +47,7 @@ export default function TextAnalysis({ backendOnline, onAnalyzed }) {
           setLoading(false)
           return
         }
-        endpoint = 'http://localhost:5000/api/analyze/text'
+        endpoint = 'https://fake-news-detection-system-j6b1.onrender.com/api/analyze/text'
         body = { text: text.trim() }
       }
 
