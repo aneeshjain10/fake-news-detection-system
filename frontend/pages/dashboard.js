@@ -25,7 +25,7 @@ export default function Dashboard() {
     if (!session) { router.replace('/'); return }
     setUser(session)
     // Health check
-    fetch('http://localhost:5000/api/health')
+    fetch('https://fake-news-detection-system-j6b1.onrender.com/api/health')
       .then(r => r.json())
       .then(d => setBackendOnline(d.status === 'ok'))
       .catch(() => setBackendOnline(false))

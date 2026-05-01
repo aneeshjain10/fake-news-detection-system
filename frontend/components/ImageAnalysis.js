@@ -22,7 +22,7 @@ export default function ImageAnalysis() {
     try {
       const form = new FormData()
       form.append('image', file)
-      const res = await fetch('http://localhost:5000/api/analyze/image', { method: 'POST', body: form })
+      const res = await fetch('https://fake-news-detection-system-j6b1.onrender.com/api/analyze/image', { method: 'POST', body: form })
       const data = await res.json()
       setResult(data)
     } catch {

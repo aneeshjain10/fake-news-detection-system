@@ -25,7 +25,7 @@ export default function VideoAnalysis() {
     try {
       const form = new FormData()
       form.append('video', file)
-      const res = await fetch('http://localhost:5000/api/analyze/video', { method: 'POST', body: form })
+      const res = await fetch('https://fake-news-detection-system-j6b1.onrender.com/api/analyze/video', { method: 'POST', body: form })
       const data = await res.json()
       setProgress(100)
       setResult(data)

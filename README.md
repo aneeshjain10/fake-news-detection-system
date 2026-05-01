@@ -52,7 +52,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Backend runs at: **http://localhost:5000**
+Backend runs at: **https://fake-news-detection-system-j6b1.onrender.com**
 
 ---
 
